@@ -1,101 +1,80 @@
+import { FaFacebook } from "@react-icons/all-files/fa/FaFacebook";
+import { FaUser } from "@react-icons/all-files/fa/FaUser";
+
 const featuredTestimonial = {
-  body: "Integer id nunc sit semper purus. Bibendum at lacus ut arcu blandit montes vitae auctor libero. Hac condimentum dignissim nibh vulputate ut nunc. Amet nibh orci mi venenatis blandit vel et proin. Non hendrerit in vel ac diam.",
+  body: "The owner was at my house and help me install I live in St Pete beach. They worked like a charm no water in the house absolutely amazing! I'm a testimonial for sure I think I've already gotten you so many customers from talking about them to people I know. Let me know if you want me to do a verbal testimonial about them",
   author: {
-    name: "Brenna Goyette",
-    handle: "brennagoyette",
-    imageUrl:
-      "https://images.unsplash.com/photo-1550525811-e5869dd03032?ixlib=rb-=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=facearea&facepad=2&w=1024&h=1024&q=80",
-    logoUrl:
-      "https://tailwindui.com/plus-assets/img/logos/savvycal-logo-gray-900.svg",
+    name: "Stephen Carrol",
+    handle: "stephencarrol",
+    imageUrl: FaUser,
+    logoUrl: FaFacebook,
   },
 };
 const testimonials = [
   [
     [
       {
-        body: "Laborum quis quam. Dolorum et ut quod quia. Voluptas numquam delectus nihil. Aut enim doloremque et ipsam.",
+        body: "I didn’t know much about flood barriers until I reached out to ONIX StormShield Solutions. They took the time to explain my options, showed up on time, and delivered exactly what they promised. Great service all around.",
         author: {
-          name: "Leslie Alexander",
-          handle: "lesliealexander",
-          imageUrl:
-            "https://images.unsplash.com/photo-1494790108377-be9c29b29330?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=facearea&facepad=2&w=256&h=256&q=80",
+          name: "Lisa H.",
+          location: "Marco Island, FL",
+          handle: "lisah",
+          imageUrl: FaUser,
         },
       },
       {
-        body: "Laborum quis quam. Dolorum et ut quod quia. Voluptas numquam delectus nihil. Aut enim doloremque et ipsam.",
+        body: "The owner was at my house and help me install I live in St Pete beach. They worked like a charm no water in the house absolutely amazing! I'm a testimonial for sure I think I've already gotten you so many customers from talking about them to people I know. Let me know if you want me to do a verbal testimonial about them",
         author: {
-          name: "Leslie Alexander",
-          handle: "lesliealexander",
-          imageUrl:
-            "https://images.unsplash.com/photo-1494790108377-be9c29b29330?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=facearea&facepad=2&w=256&h=256&q=80",
-        },
-      },
-      {
-        body: "Laborum quis quam. Dolorum et ut quod quia. Voluptas numquam delectus nihil. Aut enim doloremque et ipsam.",
-        author: {
-          name: "Leslie Alexander",
-          handle: "lesliealexander",
-          imageUrl:
-            "https://images.unsplash.com/photo-1494790108377-be9c29b29330?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=facearea&facepad=2&w=256&h=256&q=80",
+          name: "Stephen Carrol",
+          handle: "stephencarrol",
+          imageUrl: FaUser,
         },
       }
-      // More testimonials...
     ],
     [
       {
-        body: "Aut reprehenderit voluptatem eum asperiores beatae id. Iure molestiae ipsam ut officia rem nulla blanditiis.",
+        body: "We had a terrible flood last year, so we decided to protect our home before the next storm. Joseling from ONIX StormShield Solutions was amazing — professional, knowledgeable, and genuinely cared. The install was clean and quick, and the barriers look great.",
         author: {
-          name: "Lindsay Walton",
-          handle: "lindsaywalton",
-          imageUrl:
-            "https://images.unsplash.com/photo-1517841905240-472988babdf9?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=facearea&facepad=2&w=256&h=256&q=80",
+          name: "Claudia L.",
+          location: "Naples, FL",
+          handle: "claudia",
+          imageUrl: FaUser,
         },
       },
-      // More testimonials...
     ],
   ],
   [
     [
       {
-        body: "Voluptas quos itaque ipsam in voluptatem est. Iste eos blanditiis repudiandae. Earum deserunt enim molestiae ipsum perferendis recusandae saepe corrupti.",
+        body: "The ONIX StormShield team built a custom knee wall for one of our doors and installed the barriers on all our openings. Everything blends perfectly with the house. Great craftsmanship and attention to detail.",
         author: {
-          name: "Tom Cook",
-          handle: "tomcook",
-          imageUrl:
-            "https://images.unsplash.com/photo-1472099645785-5658abf4ff4e?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=facearea&facepad=2&w=256&h=256&q=80",
+          name: "David T.",
+          location: "Tampa, FL",
+          handle: "davidt",
+          imageUrl: FaUser,
         },
       },
       // More testimonials...
     ],
     [
       {
-        body: "Molestias ea earum quos nostrum doloremque sed. Quaerat quasi aut velit incidunt excepturi rerum voluptatem minus harum.",
+        body: "We were so worried about flooding this season, but the team at ONIX StormShield Solutions made the whole process smooth and stress-free. They explained everything clearly, did a professional installation, and now we feel much safer. Highly recommended!",
         author: {
-          name: "Leonard Krasner",
-          handle: "leonardkrasner",
-          imageUrl:
-            "https://images.unsplash.com/photo-1519345182560-3f2917c472ef?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=facearea&facepad=2&w=256&h=256&q=80",
+          name: "Susan G.",
+          location: "Treasure Island, FL",
+          handle: "susang",
+          imageUrl: FaUser,
         },
       },
       {
-        body: "Molestias ea earum quos nostrum doloremque sed. Quaerat quasi aut velit incidunt excepturi rerum voluptatem minus harum.",
+        body: "ONIX StormShield Solutions came out, assessed our home, and had the barriers installed quickly and cleanly. The quality of the product and the installation was excellent. We feel confident going into this storm season.",
         author: {
-          name: "Leonard Krasner",
-          handle: "leonardkrasner",
-          imageUrl:
-            "https://images.unsplash.com/photo-1519345182560-3f2917c472ef?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=facearea&facepad=2&w=256&h=256&q=80",
+          name: "Michael R.",
+          location: "St. Petersburg, FL",
+          handle: "michaelr",
+          imageUrl: FaUser,
         },
       },
-      {
-        body: "Molestias ea earum quos nostrum doloremque sed. Quaerat quasi aut velit incidunt excepturi rerum voluptatem minus harum.",
-        author: {
-          name: "Leonard Krasner",
-          handle: "leonardkrasner",
-          imageUrl:
-            "https://images.unsplash.com/photo-1519345182560-3f2917c472ef?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=facearea&facepad=2&w=256&h=256&q=80",
-        },
-      }
-      // More testimonials...
     ],
   ],
 ];
@@ -133,9 +112,7 @@ export default function Testimonials() {
       </div>
       <div className="mx-auto max-w-7xl px-6 lg:px-8">
         <div className="mx-auto max-w-2xl text-center">
-          <h2 className="text-base/7 font-semibold text-white">
-            Testimonials
-          </h2>
+          <h2 className="text-base/7 font-semibold text-white">Testimonials</h2>
           <p className="mt-2 text-4xl font-semibold tracking-tight text-balance text-white sm:text-5xl">
             We have worked with thousands of amazing people
           </p>
@@ -146,22 +123,14 @@ export default function Testimonials() {
               <p>{`“${featuredTestimonial.body}”`}</p>
             </blockquote>
             <figcaption className="flex flex-wrap items-center gap-x-4 gap-y-4 border-t border-gray-900/10 px-6 py-4 sm:flex-nowrap">
-              <img
-                alt=""
-                src={featuredTestimonial.author.imageUrl}
-                className="size-10 flex-none rounded-full bg-gray-50"
-              />
+              <featuredTestimonial.author.imageUrl className="size-10 flex-none rounded-full" />
               <div className="flex-auto">
                 <div className="font-semibold">
                   {featuredTestimonial.author.name}
                 </div>
                 <div className="text-gray-600">{`@${featuredTestimonial.author.handle}`}</div>
               </div>
-              <img
-                alt=""
-                src={featuredTestimonial.author.logoUrl}
-                className="h-10 w-auto flex-none"
-              />
+              <featuredTestimonial.author.logoUrl className="h-10 w-auto flex-none text-blue-500" />
             </figcaption>
           </figure>
           {testimonials.map((columnGroup, columnGroupIdx) => (
@@ -190,11 +159,8 @@ export default function Testimonials() {
                         <p>{`“${testimonial.body}”`}</p>
                       </blockquote>
                       <figcaption className="mt-6 flex items-center gap-x-4">
-                        <img
-                          alt=""
-                          src={testimonial.author.imageUrl}
-                          className="size-10 rounded-full bg-gray-50"
-                        />
+                        <testimonial.author.imageUrl className="size-10 rounded-full" />
+
                         <div>
                           <div className="font-semibold">
                             {testimonial.author.name}

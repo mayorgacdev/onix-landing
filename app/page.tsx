@@ -19,8 +19,8 @@ export default function Home() {
       <Gallery />
       <Section />
       <Testimonials />
-      <ContactUs />
       <Questions />
+      <ContactUs />
       <Footer />
     </>
   );

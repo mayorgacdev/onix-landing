@@ -1,61 +1,40 @@
+import { 
+  FaShieldAlt, 
+  FaHardHat, 
+  FaTools, 
+  FaExclamationTriangle, 
+  FaHome, 
+  FaUserShield 
+} from 'react-icons/fa';
+
 export default function Companies() {
   return (
     <div className="bg-blue-dark py-24 sm:py-32 ">
       <div className="mx-auto max-w-7xl px-6 lg:px-8">
         <div className="-mx-6 grid grid-cols-2 gap-0.5 overflow-hidden sm:mx-0 sm:rounded-2xl md:grid-cols-3">
-          <div className="bg-white/5 p-8 sm:p-10">
-            <img
-              alt="Transistor"
-              src="https://tailwindui.com/plus-assets/img/logos/158x48/transistor-logo-white.svg"
-              width={158}
-              height={48}
-              className="max-h-12 w-full object-contain"
-            />
+          <div className="bg-white/5 p-8 sm:p-10 flex items-center justify-center gap-3">
+            <FaShieldAlt className="text-white text-4xl sm:text-5xl" />
+            <span className="text-white text-sm font-medium">Total Protection</span>
           </div>
-          <div className="bg-white/5 p-6 sm:p-10">
-            <img
-              alt="Reform"
-              src="https://tailwindui.com/plus-assets/img/logos/158x48/reform-logo-white.svg"
-              width={158}
-              height={48}
-              className="max-h-12 w-full object-contain"
-            />
+          <div className="bg-white/5 p-6 sm:p-10 flex items-center justify-center gap-3">
+            <FaHardHat className="text-white text-4xl sm:text-5xl" />
+            <span className="text-white text-sm font-medium">Safe Construction</span>
           </div>
-          <div className="bg-white/5 p-6 sm:p-10">
-            <img
-              alt="Tuple"
-              src="https://tailwindui.com/plus-assets/img/logos/158x48/tuple-logo-white.svg"
-              width={158}
-              height={48}
-              className="max-h-12 w-full object-contain"
-            />
+          <div className="bg-white/5 p-6 sm:p-10 flex items-center justify-center gap-3">
+            <FaTools className="text-white text-4xl sm:text-5xl" />
+            <span className="text-white text-sm font-medium">Professional Tools</span>
           </div>
-          <div className="bg-white/5 p-6 sm:p-10">
-            <img
-              alt="Laravel"
-              src="https://tailwindui.com/plus-assets/img/logos/158x48/laravel-logo-white.svg"
-              width={158}
-              height={48}
-              className="max-h-12 w-full object-contain"
-            />
+          <div className="bg-white/5 p-6 sm:p-10 flex items-center justify-center gap-3">
+            <FaExclamationTriangle className="text-white text-4xl sm:text-5xl" />
+            <span className="text-white text-sm font-medium">Risk Prevention</span>
           </div>
-          <div className="bg-white/5 p-6 sm:p-10">
-            <img
-              alt="SavvyCal"
-              src="https://tailwindui.com/plus-assets/img/logos/158x48/savvycal-logo-white.svg"
-              width={158}
-              height={48}
-              className="max-h-12 w-full object-contain"
-            />
+          <div className="bg-white/5 p-6 sm:p-10 flex items-center justify-center gap-3">
+            <FaHome className="text-white text-4xl sm:text-5xl" />
+            <span className="text-white text-sm font-medium">Home Protection</span>
           </div>
-          <div className="bg-white/5 p-6 sm:p-10">
-            <img
-              alt="Statamic"
-              src="https://tailwindui.com/plus-assets/img/logos/158x48/statamic-logo-white.svg"
-              width={158}
-              height={48}
-              className="max-h-12 w-full object-contain"
-            />
+          <div className="bg-white/5 p-6 sm:p-10 flex items-center justify-center gap-3">
+            <FaUserShield className="text-white text-4xl sm:text-5xl" />
+            <span className="text-white text-sm font-medium">Personal Safety</span>
           </div>
         </div>
       </div>

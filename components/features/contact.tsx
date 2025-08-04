@@ -58,9 +58,9 @@ export default function ContactUs() {
               Get in touch
             </h2>
             <p className="mt-6 text-lg/8 text-gray-300">
-              Proin volutpat consequat porttitor cras nullam gravida at. Orci
-              molestie a eu arcu. Sed ut tincidunt integer elementum id sem.
-              Arcu sed malesuada et magna.
+              Have questions or need help protecting your property from floods?
+              Our team is here to help — whether you're looking for a custom
+              solution, emergency support, or just want to learn more.
             </p>
             <dl className="mt-10 space-y-4 text-base/7 text-gray-300">
               <div className="flex gap-x-4">
@@ -72,9 +72,11 @@ export default function ContactUs() {
                   />
                 </dt>
                 <dd>
-                  545 Mavis Island
+                  Port Charlotte, FL · Sarasota, FL · Fort Myers, FL · Naples,
+                  FL · Miami, FL · Lehigh Acres, FL · Cape Coral, FL · Bonita
+                  Springs, FL · Saint Petersburg, FL
                   <br />
-                  Chicago, IL 99191
+                  Florida, Miami
                 </dd>
               </div>
               <div className="flex gap-x-4">
@@ -86,8 +88,8 @@ export default function ContactUs() {
                   />
                 </dt>
                 <dd>
-                  <a href="tel:+1 (555) 234-5678" className="hover:text-white">
-                    +1 (555) 234-5678
+                  <a href="tel:+1 (239) 222-0810" className="hover:text-white">
+                    +1 (239) 222-0810
                   </a>
                 </dd>
               </div>
@@ -101,10 +103,10 @@ export default function ContactUs() {
                 </dt>
                 <dd>
                   <a
-                    href="mailto:hello@example.com"
+                    href="mailto:hello@onixstormshield.com"
                     className="hover:text-white"
                   >
-                    hello@example.com
+                    hello@onixstormshield.com
                   </a>
                 </dd>
               </div>
@@ -207,7 +209,7 @@ export default function ContactUs() {
             <div className="mt-8 flex justify-end">
               <button
                 type="submit"
-                className="rounded-md bg-indigo-500 px-3.5 py-2.5 text-center text-sm font-semibold text-white shadow-xs hover:bg-indigo-400 focus-visible:outline-2 focus-visible:outline-offset-2 focus-visible:outline-indigo-500"
+                className="rounded-md bg-button-dark px-3.5 py-2.5 text-center text-sm font-semibold text-white shadow-xs hover:bg-indigo-400 focus-visible:outline-2 focus-visible:outline-offset-2 focus-visible:outline-indigo-500"
               >
                 Send message
               </button>

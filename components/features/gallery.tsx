@@ -8,76 +8,95 @@ export default function Gallery() {
       </h2>
       <div className="mx-auto max-w-7xl px-6 lg:px-8 lg:pr-8">
         <p className="text-base/7 leading-relaxed text-white/80 text-justify p-5 mt-3">
-          Lorem ipsum, dolor sit amet consectetur adipisicing elit. Maiores
-          impedit perferendis suscipit eaque, iste dolor cupiditate blanditiis.
-          Lorem ipsum, dolor sit amet consectetur adipisicing elit. Maiores
-          Lorem ipsum, dolor sit amet consectetur adipisicing elit. Maiores
-          impedit perferendis suscipit eaque, iste dolor cupiditate blanditiis.
-          Lorem ipsum, dolor sit amet consectetur adipisicing elit. Maiores
+          At ONIX JM StormShield Solutions, we help you stay one step ahead of
+          the storm. Our Dam Easy™ barriers provide a reliable and professional
+          flood protection system that’s built to perform — and built to last.
         </p>
       </div>
 
       <div className="mx-auto max-w-7xl px-6 lg:px-8 grid grid-cols-1 gap-4 sm:grid-cols-2 md:grid-cols-3">
         <div>
           <img
-            className="object-cover object-center w-full h-40 max-w-full rounded-lg"
-            src="https://images.unsplash.com/photo-1499696010180-025ef6e1a8f9?ixlib=rb-4.0.3&amp;ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&amp;auto=format&amp;fit=crop&amp;w=1470&amp;q=80"
+            className="object-cover object-center w-full h-100 max-w-full rounded-lg"
+            src="/assets/image1.jpg"
             alt="gallery-photo"
           />
         </div>
         <div>
           <img
-            className="object-cover object-center w-full h-40 max-w-full rounded-lg"
-            src="https://images.unsplash.com/photo-1432462770865-65b70566d673?ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&amp;ixlib=rb-1.2.1&amp;auto=format&amp;fit=crop&amp;w=1950&amp;q=80"
+            className="object-cover object-center w-full h-100 max-w-full rounded-lg"
+            src="/assets/image2.jpg"
             alt="gallery-photo"
           />
         </div>
         <div>
           <img
-            className="object-cover object-center w-full h-40 max-w-full rounded-lg"
-            src="https://images.unsplash.com/photo-1497436072909-60f360e1d4b1?ixlib=rb-4.0.3&amp;ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&amp;auto=format&amp;fit=crop&amp;w=2560&amp;q=80"
+            className="object-cover object-center w-full h-100 max-w-full rounded-lg"
+            src="/assets/image3.jpg"
             alt="gallery-photo"
           />
         </div>
         <div>
           <img
-            className="object-cover object-center w-full h-40 max-w-full rounded-lg"
-            src="https://images.unsplash.com/photo-1493246507139-91e8fad9978e?ixlib=rb-4.0.3&amp;ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&amp;auto=format&amp;fit=crop&amp;w=2940&amp;q=80"
+            className="object-cover object-center w-full h-100 max-w-full rounded-lg"
+            src="/assets/image4.jpg"
             alt="gallery-photo"
           />
         </div>
         <div>
           <img
-            className="object-cover object-center w-full h-40 max-w-full rounded-lg"
-            src="https://images.unsplash.com/photo-1518623489648-a173ef7824f3?ixlib=rb-4.0.3&amp;ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&amp;auto=format&amp;fit=crop&amp;w=2762&amp;q=80"
+            className="object-cover object-center w-full h-100 max-w-full rounded-lg"
+            src="/assets/image5.jpg"
             alt="gallery-photo"
           />
         </div>
         <div>
           <img
-            className="object-cover object-center w-full h-40 max-w-full rounded-lg"
-            src="https://images.unsplash.com/photo-1682407186023-12c70a4a35e0?ixlib=rb-4.0.3&amp;ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&amp;auto=format&amp;fit=crop&amp;w=2832&amp;q=80"
+            className="object-cover object-center w-full h-100 max-w-full rounded-lg"
+            src="/assets/image6.jpg"
             alt="gallery-photo"
           />
         </div>
         <div>
           <img
-            className="object-cover object-center w-full h-40 max-w-full rounded-lg"
-            src="https://demos.creative-tim.com/material-kit-pro/assets/img/examples/blog5.jpg"
+            className="object-cover object-center w-full h-100 max-w-full rounded-lg"
+            src="/assets/image7.jpg"
             alt="gallery-photo"
           />
         </div>
         <div>
           <img
-            className="object-cover object-center w-full h-40 max-w-full rounded-lg"
-            src="https://material-taillwind-pro-ct-tailwind-team.vercel.app/img/content2.jpg"
+            className="object-cover object-center w-full h-100 max-w-full rounded-lg"
+            src="/assets/image8.jpg"
             alt="gallery-photo"
           />
         </div>
         <div>
           <img
-            className="object-cover object-center w-full h-40 max-w-full rounded-lg"
-            src="https://images.unsplash.com/photo-1620064916958-605375619af8?ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&amp;ixlib=rb-1.2.1&amp;auto=format&amp;fit=crop&amp;w=1493&amp;q=80"
+            className="object-cover object-center w-full h-100 max-w-full rounded-lg"
+            src="/assets/image9.jpg"
+            alt="gallery-photo"
+          />
+        </div>
+        <div>
+          <img
+            className="object-cover object-center w-full h-100 max-w-full rounded-lg"
+            src="/assets/image10.jpg"
+            alt="gallery-photo"
+          />
+        </div>
+       
+        <div>
+          <img
+            className="object-cover object-center w-full h-100 max-w-full rounded-lg"
+            src="/assets/image12.jpg"
+            alt="gallery-photo"
+          />
+        </div>
+        <div>
+          <img
+            className="object-cover object-center w-full h-100 max-w-full rounded-lg"
+            src="/assets/image13.jpg"
             alt="gallery-photo"
           />
         </div>

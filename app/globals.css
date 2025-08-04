@@ -12,7 +12,8 @@
   --font-mono: var(--font-geist-mono);
   
   /* Custom color palette */
-  --color-blue-dark: #14233C;
+  --color-blue-dark: #081224;
+  --color-button-dark: #A59A62;
   --color-blue-medium: #2CA9E1;
   --color-blue-light: #262D44;
   --color-green-aqua: #3FD1B8;

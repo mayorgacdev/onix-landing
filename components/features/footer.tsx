@@ -2,21 +2,21 @@ import { JSX, SVGProps } from "react";
 
 const navigation = {
   solutions: [
-    { name: "Marketing", href: "#" },
-    { name: "Analytics", href: "#" },
-    { name: "Automation", href: "#" },
-    { name: "Commerce", href: "#" },
-    { name: "Insights", href: "#" },
+    { name: "About Us", href: "#" },
+    { name: "Gallery", href: "#" },
+    { name: "Services", href: "#" },
+    { name: "Testimonials", href: "#" },
+    { name: "Contact us", href: "#" },
   ],
   support: [
-    { name: "Submit ticket", href: "#" },
-    { name: "Documentation", href: "#" },
+    { name: "Submit case", href: "#" },
+    { name: "Questions", href: "#" },
     { name: "Guides", href: "#" },
   ],
   company: [
     { name: "About", href: "#" },
     { name: "Blog", href: "#" },
-    { name: "Jobs", href: "#" },
+    { name: "contact us", href: "#" },
     { name: "Press", href: "#" },
   ],
   legal: [
@@ -27,7 +27,7 @@ const navigation = {
   social: [
     {
       name: "Facebook",
-      href: "#",
+      href: "https://www.facebook.com/people/ONIX-JM-EPOXY/61574283935141/",
       icon: (props: JSX.IntrinsicAttributes & SVGProps<SVGSVGElement>) => (
         <svg fill="currentColor" viewBox="0 0 24 24" {...props}>
           <path
@@ -95,14 +95,10 @@ export default function Footer() {
       <div className="mx-auto max-w-7xl px-6 pt-16 pb-8 sm:pt-24 lg:px-8 lg:pt-32">
         <div className="xl:grid xl:grid-cols-3 xl:gap-8">
           <div className="space-y-8">
-            <img
-              alt="Company name"
-              src="https://tailwindui.com/plus-assets/img/logos/mark.svg?color=indigo&shade=500"
-              className="h-9"
-            />
+            <img alt="Company name" src="/logo.svg" className="h-20" />
             <p className="text-sm/6 text-balance text-gray-300">
               Making the world a better place through constructing elegant
-              hierarchies.
+              solutions
             </p>
             <div className="flex gap-x-6">
               {navigation.social.map((item) => (
@@ -188,7 +184,7 @@ export default function Footer() {
         </div>
         <div className="mt-16 border-t border-white/10 pt-8 sm:mt-20 lg:mt-24">
           <p className="text-sm/6 text-gray-400">
-            &copy; 2024 Your Company, Inc. All rights reserved.
+            &copy; 2024 onixstormshield, Inc. All rights reserved.
           </p>
         </div>
       </div>
