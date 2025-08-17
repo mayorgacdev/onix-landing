@@ -1,3 +1,6 @@
+"use client";
+
+import React from "react";
 import {
   BuildingOffice2Icon,
   EnvelopeIcon,
@@ -72,11 +75,8 @@ export default function ContactUs() {
                   />
                 </dt>
                 <dd>
-                  Port Charlotte, FL · Sarasota, FL · Fort Myers, FL · Naples,
-                  FL · Miami, FL · Lehigh Acres, FL · Cape Coral, FL · Bonita
-                  Springs, FL · Saint Petersburg, FL
-                  <br />
-                  Florida, Miami
+                  Serving: St. Petersburg, Tampa, Fort Myers, Naples & nearby
+                  areas
                 </dd>
               </div>
               <div className="flex gap-x-4">
@@ -103,10 +103,10 @@ export default function ContactUs() {
                 </dt>
                 <dd>
                   <a
-                    href="mailto:hello@onixstormshield.com"
+                    href="mailto:info@onixstormshield.com"
                     className="hover:text-white"
                   >
-                    hello@onixstormshield.com
+                    info@onixstormshield.com
                   </a>
                 </dd>
               </div>
@@ -114,76 +114,136 @@ export default function ContactUs() {
           </div>
         </div>
         <form
-          action="#"
+          action="https://api.web3forms.com/submit"
           method="POST"
           className="px-6 pt-20 pb-24 sm:pb-32 lg:px-8 lg:py-48"
         >
           <div className="mx-auto max-w-xl lg:mr-0 lg:max-w-lg">
             <div className="grid grid-cols-1 gap-x-8 gap-y-6 sm:grid-cols-2">
+              <input
+                type="hidden"
+                name="access_key"
+                value="891a2bc9-ffe9-4a57-ab7d-549c233e129d"
+              />
+
               <div>
                 <label
-                  htmlFor="first-name"
+                  htmlFor="full-name"
                   className="block text-sm/6 font-semibold text-white"
                 >
-                  First name
+                  Full Name
                 </label>
                 <div className="mt-2.5">
                   <input
-                    id="first-name"
-                    name="first-name"
+                    id="full-name"
+                    name="name"
                     type="text"
-                    autoComplete="given-name"
+                    required
+                    autoComplete="name"
                     className="block w-full rounded-md bg-white/5 px-3.5 py-2 text-base text-white outline-1 -outline-offset-1 outline-white/10 placeholder:text-gray-500 focus:outline-2 focus:-outline-offset-2 focus:outline-indigo-500"
                   />
                 </div>
               </div>
               <div>
-                <label
-                  htmlFor="last-name"
-                  className="block text-sm/6 font-semibold text-white"
-                >
-                  Last name
-                </label>
-                <div className="mt-2.5">
-                  <input
-                    id="last-name"
-                    name="last-name"
-                    type="text"
-                    autoComplete="family-name"
-                    className="block w-full rounded-md bg-white/5 px-3.5 py-2 text-base text-white outline-1 -outline-offset-1 outline-white/10 placeholder:text-gray-500 focus:outline-2 focus:-outline-offset-2 focus:outline-indigo-500"
-                  />
-                </div>
-              </div>
-              <div className="sm:col-span-2">
                 <label
                   htmlFor="email"
                   className="block text-sm/6 font-semibold text-white"
                 >
-                  Email
+                  Email Address
                 </label>
                 <div className="mt-2.5">
                   <input
                     id="email"
                     name="email"
                     type="email"
+                    required
                     autoComplete="email"
                     className="block w-full rounded-md bg-white/5 px-3.5 py-2 text-base text-white outline-1 -outline-offset-1 outline-white/10 placeholder:text-gray-500 focus:outline-2 focus:-outline-offset-2 focus:outline-indigo-500"
                   />
                 </div>
               </div>
-              <div className="sm:col-span-2">
+              <div>
                 <label
                   htmlFor="phone-number"
                   className="block text-sm/6 font-semibold text-white"
                 >
-                  Phone number
+                  Phone Number
                 </label>
                 <div className="mt-2.5">
                   <input
                     id="phone-number"
-                    name="phone-number"
+                    name="phone"
                     type="tel"
+                    required
                     autoComplete="tel"
+                    className="block w-full rounded-md bg-white/5 px-3.5 py-2 text-base text-white outline-1 -outline-offset-1 outline-white/10 placeholder:text-gray-500 focus:outline-2 focus:-outline-offset-2 focus:outline-indigo-500"
+                  />
+                </div>
+              </div>
+              <div>
+                <label
+                  htmlFor="address"
+                  className="block text-sm/6 font-semibold text-white"
+                >
+                  Address
+                </label>
+                <div className="mt-2.5">
+                  <input
+                    id="address"
+                    name="address"
+                    type="text"
+                    autoComplete="street-address"
+                    className="block w-full rounded-md bg-white/5 px-3.5 py-2 text-base text-white outline-1 -outline-offset-1 outline-white/10 placeholder:text-gray-500 focus:outline-2 focus:-outline-offset-2 focus:outline-indigo-500"
+                  />
+                </div>
+              </div>
+              <div>
+                <label
+                  htmlFor="city"
+                  className="block text-sm/6 font-semibold text-white"
+                >
+                  City
+                </label>
+                <div className="mt-2.5">
+                  <input
+                    id="city"
+                    name="city"
+                    type="text"
+                    autoComplete="address-level2"
+                    className="block w-full rounded-md bg-white/5 px-3.5 py-2 text-base text-white outline-1 -outline-offset-1 outline-white/10 placeholder:text-gray-500 focus:outline-2 focus:-outline-offset-2 focus:outline-indigo-500"
+                  />
+                </div>
+              </div>
+              <div>
+                <label
+                  htmlFor="zip"
+                  className="block text-sm/6 font-semibold text-white"
+                >
+                  Zip
+                </label>
+                <div className="mt-2.5">
+                  <input
+                    id="zip"
+                    name="zip"
+                    type="text"
+                    autoComplete="postal-code"
+                    className="block w-full rounded-md bg-white/5 px-3.5 py-2 text-base text-white outline-1 -outline-offset-1 outline-white/10 placeholder:text-gray-500 focus:outline-2 focus:-outline-offset-2 focus:outline-indigo-500"
+                  />
+                </div>
+              </div>
+              <div>
+                <label
+                  htmlFor="state"
+                  className="block text-sm/6 font-semibold text-white"
+                >
+                  State
+                </label>
+                <div className="mt-2.5">
+                  <input
+                    id="state"
+                    name="state"
+                    type="text"
+                    autoComplete="address-level1"
                     className="block w-full rounded-md bg-white/5 px-3.5 py-2 text-base text-white outline-1 -outline-offset-1 outline-white/10 placeholder:text-gray-500 focus:outline-2 focus:-outline-offset-2 focus:outline-indigo-500"
                   />
                 </div>
@@ -193,23 +253,25 @@ export default function ContactUs() {
                   htmlFor="message"
                   className="block text-sm/6 font-semibold text-white"
                 >
-                  Message
+                  Tell Us Anything About Your Project That Will Help
                 </label>
                 <div className="mt-2.5">
                   <textarea
                     id="message"
                     name="message"
                     rows={4}
-                    className="block w-full rounded-md bg-white/5 px-3.5 py-2 text-base text-white outline-1 -outline-offset-1 outline-white/10 placeholder:text-gray-500 focus:outline-2 focus:-outline-offset-2 focus:outline-indigo-500"
+                    required
+                    placeholder="Enter your message"
+                    className="block w-full rounded-md bg-white/5 px-3.5 py-2 text-base text-white outline-1 -outline-offset-1 outline-white/10 placeholder:text-gray-500 focus-visible:outline-2 focus-visible:-outline-offset-2 focus-visible:outline-indigo-500"
                     defaultValue={""}
                   />
                 </div>
               </div>
             </div>
-            <div className="mt-8 flex justify-end">
+            <div className="mt-8 flex flex-col items-end gap-4">
               <button
                 type="submit"
-                className="rounded-md bg-button-dark px-3.5 py-2.5 text-center text-sm font-semibold text-white shadow-xs hover:bg-indigo-400 focus-visible:outline-2 focus-visible:outline-offset-2 focus-visible:outline-indigo-500"
+                className="rounded-md px-3.5 py-2.5 text-center text-sm font-semibold text-white shadow-xs focus-visible:outline-2 focus-visible:outline-offset-2 focus-visible:outline-indigo-500 transition-colors duration-200 bg-button-dark hover:bg-indigo-400"
               >
                 Send message
               </button>

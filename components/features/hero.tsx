@@ -5,11 +5,11 @@ import { Dialog, DialogPanel } from "@headlessui/react";
 import { Bars3Icon, XMarkIcon } from "@heroicons/react/24/outline";
 
 const navigation = [
-  { name: "About Us", href: "#" },
-  { name: "Gallery", href: "#" },
-  { name: "Services", href: "#" },
-  { name: "Testimonials", href: "#" },
-  { name: "Contact Us", href: "#" },
+  { name: "About Us", href: "#about" },
+  { name: "Gallery", href: "#gallery" },
+  { name: "Services", href: "#services" },
+  { name: "Testimonials", href: "#testimonials" },
+  { name: "Contact Us", href: "#contact" },
 ];
 
 export default function Hero() {
@@ -43,7 +43,14 @@ export default function Hero() {
               <a
                 key={item.name}
                 href={item.href}
-                className="text-sm/6 font-semibold text-white"
+                className="text-sm/6 font-semibold text-white hover:text-indigo-400 transition-colors duration-200"
+                onClick={(e) => {
+                  e.preventDefault();
+                  const element = document.querySelector(item.href);
+                  if (element) {
+                    element.scrollIntoView({ behavior: 'smooth' });
+                  }
+                }}
               >
                 {item.name}
               </a>
@@ -83,7 +90,15 @@ export default function Hero() {
                     <a
                       key={item.name}
                       href={item.href}
-                      className="-mx-3 block rounded-lg px-3 py-2 text-base/7 font-semibold text-white hover:bg-blue-light"
+                      className="-mx-3 block rounded-lg px-3 py-2 text-base/7 font-semibold text-white hover:bg-blue-light transition-colors duration-200"
+                      onClick={(e) => {
+                        e.preventDefault();
+                        setMobileMenuOpen(false);
+                        const element = document.querySelector(item.href);
+                        if (element) {
+                          element.scrollIntoView({ behavior: 'smooth' });
+                        }
+                      }}
                     >
                       {item.name}
                     </a>
@@ -159,14 +174,21 @@ export default function Hero() {
                   </p>
                   <div className="mt-10 flex items-center gap-x-6">
                     <a
-                      href="#"
-                      className="rounded-md bg-button-dark px-3.5 py-2.5 text-sm font-semibold text-white shadow-xs hover:bg-indigo-500 focus-visible:outline-2 focus-visible:outline-offset-2 focus-visible:outline-indigo-600"
+                      href="#contact"
+                      className="rounded-md bg-button-dark px-3.5 py-2.5 text-sm font-semibold text-white shadow-xs hover:bg-indigo-500 focus-visible:outline-2 focus-visible:outline-offset-2 focus-visible:outline-indigo-600 transition-colors duration-200"
+                      onClick={(e) => {
+                        e.preventDefault();
+                        const element = document.querySelector('#contact');
+                        if (element) {
+                          element.scrollIntoView({ behavior: 'smooth' });
+                        }
+                      }}
                     >
                       Schedule Your Free Demo
                     </a>
                     <a
-                      href="#"
-                      className="text-sm/6 font-semibold text-gray-400"
+                      href="tel:+1 (239) 222-0810"
+                      className="text-sm/6 font-semibold text-gray-400 hover:text-white transition-colors duration-200"
                     >
                       Make a call <span aria-hidden="true">→</span>
                     </a>

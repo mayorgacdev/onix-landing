@@ -14,13 +14,23 @@ export default function Home() {
   return (
     <>
       <Hero />
-      <About />
-      <Companies />
-      <Gallery />
+      <div id="about">
+        <About />
+      </div>
+      <div id="services">
+        <Companies />
+      </div>
+      <div id="gallery">
+        <Gallery />
+      </div>
       <Section />
-      <Testimonials />
+      <div id="testimonials">
+        <Testimonials />
+      </div>
       <Questions />
-      <ContactUs />
+      <div id="contact">
+        <ContactUs />
+      </div>
       <Footer />
     </>
   );
