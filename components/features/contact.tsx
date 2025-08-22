@@ -1,6 +1,6 @@
 "use client";
 
-import React from "react";
+import React, { useState } from "react";
 import {
   BuildingOffice2Icon,
   EnvelopeIcon,
@@ -8,6 +8,40 @@ import {
 } from "@heroicons/react/24/outline";
 
 export default function ContactUs() {
+  const [result, setResult] = useState("");
+
+  const onSubmit = async (event: React.FormEvent<HTMLFormElement>) => {
+    event.preventDefault();
+    setResult("Enviando....");
+    
+    try {
+      // Use the native form submission method - this is more reliable
+      const form = event.currentTarget;
+      const formData = new FormData(form);
+      formData.append("access_key", "30475ce0-17f2-4074-b89c-39661a04ff25");
+      
+      const response = await fetch("https://api.web3forms.com/submit", {
+        method: "POST",
+        body: formData
+      });
+
+      const data = await response.json();
+
+      if (data.success) {
+        setResult(
+          "¡Mensaje enviado exitosamente! Nos pondremos en contacto contigo pronto."
+        );
+        form.reset();
+      } else {
+        console.log("Error", data);
+        setResult(data.message || "Error al enviar el mensaje");
+      }
+    } catch (error) {
+      console.error("Error:", error);
+      setResult("Error de conexión. Por favor, inténtalo de nuevo.");
+    }
+  };
+
   return (
     <div className="relative isolate bg-blue-dark">
       <div className="mx-auto grid max-w-7xl grid-cols-1 lg:grid-cols-2">
@@ -114,18 +148,13 @@ export default function ContactUs() {
           </div>
         </div>
         <form
+          onSubmit={onSubmit}
           action="https://api.web3forms.com/submit"
           method="POST"
           className="px-6 pt-20 pb-24 sm:pb-32 lg:px-8 lg:py-48"
         >
           <div className="mx-auto max-w-xl lg:mr-0 lg:max-w-lg">
             <div className="grid grid-cols-1 gap-x-8 gap-y-6 sm:grid-cols-2">
-              <input
-                type="hidden"
-                name="access_key"
-                value="891a2bc9-ffe9-4a57-ab7d-549c233e129d"
-              />
-
               <div>
                 <label
                   htmlFor="full-name"
@@ -263,12 +292,24 @@ export default function ContactUs() {
                     required
                     placeholder="Enter your message"
                     className="block w-full rounded-md bg-white/5 px-3.5 py-2 text-base text-white outline-1 -outline-offset-1 outline-white/10 placeholder:text-gray-500 focus-visible:outline-2 focus-visible:-outline-offset-2 focus-visible:outline-indigo-500"
-                    defaultValue={""}
                   />
                 </div>
               </div>
             </div>
             <div className="mt-8 flex flex-col items-end gap-4">
+              {result && (
+                <div
+                  className={`text-sm ${
+                    result.includes("exitosamente")
+                      ? "text-green-400"
+                      : result.includes("Enviando")
+                      ? "text-blue-400"
+                      : "text-red-400"
+                  }`}
+                >
+                  {result}
+                </div>
+              )}
               <button
                 type="submit"
                 className="rounded-md px-3.5 py-2.5 text-center text-sm font-semibold text-white shadow-xs focus-visible:outline-2 focus-visible:outline-offset-2 focus-visible:outline-indigo-500 transition-colors duration-200 bg-button-dark hover:bg-indigo-400"
